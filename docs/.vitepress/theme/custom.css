@@ -1,0 +1,38 @@
+/* ปุ่มหลัก (brand) */
+.action-btn-brand {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  background-color: #1d4ed8; /* สีฟ้า */
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 0.5em;
+  transition: background-color 0.2s;
+}
+
+.action-btn-brand:hover {
+  background-color: #2563eb; /* ฟ้าเข้มขึ้นเมื่อ hover */
+}
+
+/* ปุ่มรอง (alt) */
+.action-btn-alt {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  background-color: #e5e7eb; /* สีเทาอ่อน */
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 0.5em;
+  transition: background-color 0.2s;
+}
+
+.action-btn-alt:hover {
+  background-color: #d1d5db; /* เทาเข้มขึ้นเมื่อ hover */
+}
+
+/* กล่องปุ่มรวม */
+.action-buttons {
+  margin-top: 1em;
+}

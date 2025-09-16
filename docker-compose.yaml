@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  vitepress:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    restart: always
+    volumes:
+      - .:/app         # mount โค้ดเข้ามาใน container
+      - /app/node_modules  # กันปัญหา node_modules ทับ
+    ports:
+      - "5123:5123"
