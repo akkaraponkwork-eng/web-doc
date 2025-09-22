@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as a}from"./chunks/framework.BTp0j8kV.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"job_page/docjobapi.md","filePath":"job_page/docjobapi.md"}'),t={name:"job_page/docjobapi.md"};function c(p,r,s,n,d,i){return a(),o("div")}const f=e(t,[["render",c]]);export{m as __pageData,f as default};

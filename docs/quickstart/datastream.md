@@ -34,13 +34,19 @@
 :::
 สามารถ Copy config ทำตามด้านล่างได้เลย 👇👇
 
+![setting datastream](/settingds.gif)
+
 **Step 3 : เมื่อตั้งค่า DataStream console เสร็จแล้วจะสามารถเข้าดู Job ที่ทำงานรวมถึงสามารถดูข้อมูลใน Storage list ได้ดังภาพ**
 	
+![ds step3](/ds3.png)
 
 **Step 4 : ทดสอบสร้าง Job บน DataStream console ทำตามได้ดังนี้**  
 
-📄 job main 
-```json 
+<!-- 📄 job main  -->
+
+::: code-group
+
+```json [job main.js]
 {
   "job_id": "test-pea.weather-station.main-http",
   "active": true,
@@ -104,8 +110,8 @@
 }
 ```
 
-📄 job storage-list
-```json
+<!-- 📄 job storage-list -->
+```json [job storage-list.json]
 {
   "job_id": "test-pea.weather-station.storage.all",
   "active": true,
@@ -141,7 +147,9 @@
   "_vo": "$"
 }
 ```
- 
+
+:::
+
 **Step 5 : หลังจากทำการ Save code บน DataStream console ให้ทำการเปิดโปรแกรม Postmanแล้วทำตามขั้นตอนดังนี้**
 
 ```cURL
@@ -153,7 +161,7 @@ curl --location 'https://api.thingsonnet.net/io/test-pea-ws' \
 }'
 ```
 
-**Step 6 : ทำการเปิด DataStream console และไปที่ Storage list พิมพ์ในช่องค้นหา `lesson` ทำตามขั้นตอนแล้วสังเกตผลลัพธ์**
+**Step 6 : ทำการเปิด DataStream console และไปที่ Storage list พิมพ์ในช่องค้นหา `pea.weather-station.data` ทำตามขั้นตอนแล้วสังเกตผลลัพธ์**
 
 <ActionButtons :buttons="[
   { theme: 'brand', text: 'Json job config', link: '/datastream_page/datastream' },

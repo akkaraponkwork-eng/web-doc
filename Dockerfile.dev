@@ -11,4 +11,8 @@ COPY . .
 
 EXPOSE 5123
 
+# win
 CMD ["npm", "run", "docs:dev", "--", "--host", "0.0.0.0"]
+
+#linux
+#CMD ["npx", "vitepress", "dev", "docs", "--host", "0.0.0.0"]
